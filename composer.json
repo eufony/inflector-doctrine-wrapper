@@ -29,7 +29,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Eufony\\Inflector\\Tests\\": "tests/"
+      "Eufony\\Inflector\\Tests\\": [ "tests/" ]
     }
   },
   "scripts": {
