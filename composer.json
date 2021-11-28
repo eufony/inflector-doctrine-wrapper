@@ -1,0 +1,45 @@
+{
+  "name": "eufony/inflector-doctrine-wrapper",
+  "description": "Wrapper for the Doctrine inflection package.",
+  "keywords": [ "eufony", "inflector", "inflection", "doctrine" ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alpin Gencer",
+      "email": "alpingencer@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^8.0",
+    "doctrine/inflector": "^2.0",
+    "eufony/inflector": "^1.0"
+  },
+  "require-dev": {
+    "eufony/inflector-tests": "^1.0",
+    "phpunit/phpunit": "^9.5"
+  },
+  "provide": {
+    "eufony/inflector-implementation": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Eufony\\Inflector\\": [ "src/" ]
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Eufony\\Inflector\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": [
+      "phpunit -c tests/phpunit.xml.dist"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  }
+}
